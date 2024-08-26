@@ -5,8 +5,7 @@
     <classes>
       <class name="com.seleniumframework.Amazonshopping">
         <methods>
-          <include name="addItemToCart"/>
-          <include name="teardown"/>
+          <include name="assert_item_added"/>
         </methods>
       </class> <!-- com.seleniumframework.Amazonshopping -->
     </classes>

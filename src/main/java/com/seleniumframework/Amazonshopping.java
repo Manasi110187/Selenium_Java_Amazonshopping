@@ -26,6 +26,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class Amazonshopping extends BaseTest {
@@ -66,10 +67,24 @@ public class Amazonshopping extends BaseTest {
 			dropdownElement.sendKeys(Keys.ENTER);
 			Thread.sleep(1000);
 			driver.findElement(By.id("add-to-cart-button")).click();
+			Thread.sleep(1000);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-       driver.close();
+     
+	}
+	@Test(groups = { "Startshopping" }, priority = 4)
+	public void assert_item_added() {
+		String cartCount= driver.findElement(By.id("nav-cart-count-container")).getText();
+		System.out.print(cartCount);
+	//	Thread.sleep(1000);
+	   if (cartCount.contains("1"))
+			   {
+		   			System.out.println("Test case is passed");
+			   }
+	   else
+		   
+		   System.out.println("Test case is Failed");
 	}
 	
 
