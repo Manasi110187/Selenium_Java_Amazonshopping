@@ -65,7 +65,7 @@ public class Amazonshopping extends BaseTest {
 			Thread.sleep(2000);
 			dropdownElement.sendKeys(Keys.ENTER);
 			Thread.sleep(1000);
-
+			driver.findElement(By.id("add-to-cart-button")).click();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
