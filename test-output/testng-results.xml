@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-26T01:58:42 CDT" name="Default suite" finished-at="2024-08-26T01:58:54 CDT" duration-ms="11670">
+    <groups>
+      <group name="Startshopping">
+        <method signature="Amazonshopping.navigateToAmazon()[pri:1, instance:com.seleniumframework.Amazonshopping@6253c26]" name="navigateToAmazon" class="com.seleniumframework.Amazonshopping"/>
+        <method signature="Amazonshopping.searchItem()[pri:2, instance:com.seleniumframework.Amazonshopping@6253c26]" name="searchItem" class="com.seleniumframework.Amazonshopping"/>
+        <method signature="Amazonshopping.addItemToCart()[pri:3, instance:com.seleniumframework.Amazonshopping@6253c26]" name="addItemToCart" class="com.seleniumframework.Amazonshopping"/>
+      </group> <!-- Startshopping -->
+    </groups>
+    <test started-at="2024-08-26T01:58:42 CDT" name="Default test" finished-at="2024-08-26T01:58:54 CDT" duration-ms="11670">
+      <class name="com.seleniumframework.Amazonshopping">
+        <test-method is-config="true" signature="BaseTest()[pri:0, instance:com.seleniumframework.Amazonshopping@6253c26]" started-at="2024-08-26T01:58:42 CDT" name="BaseTest" finished-at="2024-08-26T01:58:47 CDT" duration-ms="4447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BaseTest -->
+        <test-method signature="navigateToAmazon()[pri:1, instance:com.seleniumframework.Amazonshopping@6253c26]" started-at="2024-08-26T01:58:47 CDT" name="navigateToAmazon" finished-at="2024-08-26T01:58:48 CDT" duration-ms="1705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAmazon -->
+        <test-method signature="searchItem()[pri:2, instance:com.seleniumframework.Amazonshopping@6253c26]" started-at="2024-08-26T01:58:48 CDT" name="searchItem" finished-at="2024-08-26T01:58:49 CDT" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItem -->
+        <test-method signature="addItemToCart()[pri:3, instance:com.seleniumframework.Amazonshopping@6253c26]" started-at="2024-08-26T01:58:49 CDT" name="addItemToCart" finished-at="2024-08-26T01:58:54 CDT" duration-ms="4964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToCart -->
+      </class> <!-- com.seleniumframework.Amazonshopping -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

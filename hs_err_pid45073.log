@@ -1,0 +1,21 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x000000010d13332c, pid=45073, tid=29699
+#
+# JRE version: OpenJDK Runtime Environment (15.0.2+7) (build 15.0.2+7-27)
+# Java VM: OpenJDK 64-Bit Server VM (15.0.2+7-27, mixed mode, tiered, compressed oops, g1 gc, bsd-amd64)
+# Problematic frame:
+# C  [libjimage.dylib+0x332c]  ImageFileReader::find_location_index(char const*, unsigned long long*) const+0x8c
+#
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:+ShowCodeDetailsInExceptionMessages -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:61483 -ea -Dfile.encoding=UTF-8 org.testng.remote.RemoteTestNG -serport 61482 -protocol json -d /Users/mtilwalli/manasi-wkp/Amazonshopping/test-output /var/folders/2m/6yv0qfv17k5cj99h3spgsjfr0000gn/T/testng-eclipse-1354853104/testng-customsuite.xml
+
+Host: MacBookAir10,1 x86_64 2400 MHz, 8 cores, 8G, Darwin 23.2.0
