@@ -5,7 +5,7 @@
     <classes>
       <class name="com.seleniumframework.Amazonshopping">
         <methods>
-          <include name="assert_item_added"/>
+          <include name="select_filter_range"/>
         </methods>
       </class> <!-- com.seleniumframework.Amazonshopping -->
     </classes>

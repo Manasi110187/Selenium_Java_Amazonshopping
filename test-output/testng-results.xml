@@ -1,38 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-26T16:23:13 CDT" name="Default suite" finished-at="2024-08-26T16:23:28 CDT" duration-ms="14597">
+  <suite started-at="2024-08-27T11:18:45 CDT" name="Default suite" finished-at="2024-08-27T11:19:05 CDT" duration-ms="20273">
     <groups>
       <group name="Startshopping">
-        <method signature="Amazonshopping.navigateToAmazon()[pri:1, instance:com.seleniumframework.Amazonshopping@49049a04]" name="navigateToAmazon" class="com.seleniumframework.Amazonshopping"/>
-        <method signature="Amazonshopping.searchItem()[pri:2, instance:com.seleniumframework.Amazonshopping@49049a04]" name="searchItem" class="com.seleniumframework.Amazonshopping"/>
-        <method signature="Amazonshopping.addItemToCart()[pri:3, instance:com.seleniumframework.Amazonshopping@49049a04]" name="addItemToCart" class="com.seleniumframework.Amazonshopping"/>
-        <method signature="Amazonshopping.assert_item_added()[pri:4, instance:com.seleniumframework.Amazonshopping@49049a04]" name="assert_item_added" class="com.seleniumframework.Amazonshopping"/>
+        <method signature="Amazonshopping.navigateToAmazon()[pri:1, instance:com.seleniumframework.Amazonshopping@71a8adcf]" name="navigateToAmazon" class="com.seleniumframework.Amazonshopping"/>
+        <method signature="Amazonshopping.searchItem()[pri:2, instance:com.seleniumframework.Amazonshopping@71a8adcf]" name="searchItem" class="com.seleniumframework.Amazonshopping"/>
+        <method signature="Amazonshopping.addItemToCart()[pri:3, instance:com.seleniumframework.Amazonshopping@71a8adcf]" name="addItemToCart" class="com.seleniumframework.Amazonshopping"/>
+        <method signature="Amazonshopping.assert_item_added()[pri:4, instance:com.seleniumframework.Amazonshopping@71a8adcf]" name="assert_item_added" class="com.seleniumframework.Amazonshopping"/>
+        <method signature="Amazonshopping.select_filter_range()[pri:5, instance:com.seleniumframework.Amazonshopping@71a8adcf]" name="select_filter_range" class="com.seleniumframework.Amazonshopping"/>
       </group> <!-- Startshopping -->
     </groups>
-    <test started-at="2024-08-26T16:23:13 CDT" name="Default test" finished-at="2024-08-26T16:23:28 CDT" duration-ms="14597">
+    <test started-at="2024-08-27T11:18:45 CDT" name="Default test" finished-at="2024-08-27T11:19:05 CDT" duration-ms="20273">
       <class name="com.seleniumframework.Amazonshopping">
-        <test-method is-config="true" signature="BaseTest()[pri:0, instance:com.seleniumframework.Amazonshopping@49049a04]" started-at="2024-08-26T16:23:13 CDT" name="BaseTest" finished-at="2024-08-26T16:23:16 CDT" duration-ms="3073" status="PASS">
+        <test-method is-config="true" signature="BaseTest()[pri:0, instance:com.seleniumframework.Amazonshopping@71a8adcf]" started-at="2024-08-27T11:18:45 CDT" name="BaseTest" finished-at="2024-08-27T11:18:48 CDT" duration-ms="3250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BaseTest -->
-        <test-method signature="navigateToAmazon()[pri:1, instance:com.seleniumframework.Amazonshopping@49049a04]" started-at="2024-08-26T16:23:16 CDT" name="navigateToAmazon" finished-at="2024-08-26T16:23:21 CDT" duration-ms="4282" status="PASS">
+        <test-method signature="navigateToAmazon()[pri:1, instance:com.seleniumframework.Amazonshopping@71a8adcf]" started-at="2024-08-27T11:18:48 CDT" name="navigateToAmazon" finished-at="2024-08-27T11:18:53 CDT" duration-ms="4305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToAmazon -->
-        <test-method signature="searchItem()[pri:2, instance:com.seleniumframework.Amazonshopping@49049a04]" started-at="2024-08-26T16:23:21 CDT" name="searchItem" finished-at="2024-08-26T16:23:21 CDT" duration-ms="547" status="PASS">
+        <test-method signature="searchItem()[pri:2, instance:com.seleniumframework.Amazonshopping@71a8adcf]" started-at="2024-08-27T11:18:53 CDT" name="searchItem" finished-at="2024-08-27T11:18:53 CDT" duration-ms="909" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItem -->
-        <test-method signature="addItemToCart()[pri:3, instance:com.seleniumframework.Amazonshopping@49049a04]" started-at="2024-08-26T16:23:21 CDT" name="addItemToCart" finished-at="2024-08-26T16:23:28 CDT" duration-ms="6449" status="PASS">
+        <test-method signature="addItemToCart()[pri:3, instance:com.seleniumframework.Amazonshopping@71a8adcf]" started-at="2024-08-27T11:18:54 CDT" name="addItemToCart" finished-at="2024-08-27T11:19:00 CDT" duration-ms="6310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemToCart -->
-        <test-method signature="assert_item_added()[pri:4, instance:com.seleniumframework.Amazonshopping@49049a04]" started-at="2024-08-26T16:23:28 CDT" name="assert_item_added" finished-at="2024-08-26T16:23:28 CDT" duration-ms="64" status="PASS">
+        <test-method signature="assert_item_added()[pri:4, instance:com.seleniumframework.Amazonshopping@71a8adcf]" started-at="2024-08-27T11:19:00 CDT" name="assert_item_added" finished-at="2024-08-27T11:19:00 CDT" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assert_item_added -->
+        <test-method signature="select_filter_range()[pri:5, instance:com.seleniumframework.Amazonshopping@71a8adcf]" started-at="2024-08-27T11:19:00 CDT" name="select_filter_range" finished-at="2024-08-27T11:19:05 CDT" duration-ms="5212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_filter_range -->
       </class> <!-- com.seleniumframework.Amazonshopping -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

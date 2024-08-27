@@ -31,6 +31,7 @@ import org.testng.annotations.*;
 
 public class Amazonshopping extends BaseTest {
 
+	//Navigate to amazon.com
 	@Test(groups = { "Startshopping" }, priority = 1)
 	public void navigateToAmazon() {
 		driver.get("https://www.amazon.com");
@@ -40,14 +41,16 @@ public class Amazonshopping extends BaseTest {
 		driver.manage().window().fullscreen();
 	}
 
+	//Click on search and provide the item to search
 	@Test(groups = { "Startshopping" }, priority = 2)
 	public void searchItem() {
 		WebElement searchtextbox = driver.findElement(By.id("twotabsearchtextbox"));
-		searchtextbox.sendKeys("swimming fins xs");
+		searchtextbox.sendKeys("iphone");
 		searchtextbox.sendKeys(Keys.ENTER);
 
 	}
 
+	//Select perticular item from the list of displayed items, select specifications and then add it to the cart
 	@Test(groups = { "Startshopping" }, priority = 3)
 	public void addItemToCart() throws InterruptedException {
 		System.out.println("::::addItemToCart");
@@ -71,21 +74,37 @@ public class Amazonshopping extends BaseTest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-     
+
 	}
+
+	//Verify the count of items added in the cart 
 	@Test(groups = { "Startshopping" }, priority = 4)
 	public void assert_item_added() {
-		String cartCount= driver.findElement(By.id("nav-cart-count-container")).getText();
+		String cartCount = driver.findElement(By.id("nav-cart-count-container")).getText();
 		System.out.print(cartCount);
-	//	Thread.sleep(1000);
-	   if (cartCount.contains("1"))
-			   {
-		   			System.out.println("Test case is passed");
-			   }
-	   else
-		   
-		   System.out.println("Test case is Failed");
+		// Thread.sleep(1000);
+		if (cartCount.contains("1")) {
+			System.out.println("Test case is passed");
+		} else
+
+			System.out.println("Test case is Failed");
 	}
 	
+    //Re-enter item to search and this time, use filter option to apply additional filters like price-range
+	@Test(groups = { "Startshopping" }, priority = 5)
+	public void select_filter_range() throws InterruptedException {
+		driver.get(
+				"https://www.amazon.com/s?k=iphone&crid=2AYSJZIDHE2YO&sprefix=%2Caps%2C74&ref=nb_sb_ss_recent_1_0_recent");
+		Thread.sleep(1000);
+		WebElement searchtextbox = driver.findElement(By.id("twotabsearchtextbox"));
+		searchtextbox.sendKeys("iphone");
+		searchtextbox.sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@id=\"s-all-filters-announce\"]")).click();
+		Thread.sleep(1000);
+		driver.get(
+				"https://www.amazon.com/s?k=iphone&crid=367O13XKDVFF6&qid=1724775390&rnid=14674871011&sprefix=iphone%2Caps%2C123&ref=sr_nr_p_36_0_0&low-price=500&high-price=750");
+
+	}
 
 }

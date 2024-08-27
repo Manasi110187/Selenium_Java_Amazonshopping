@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +119,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.seleniumframework.Amazonshopping" class="method navigator-link" hash-for-method="searchItem">searchItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.seleniumframework.Amazonshopping" class="method navigator-link" hash-for-method="select_filter_range">select_filter_range</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -167,12 +172,19 @@
                   <span class="method-name">searchItem</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="select_filter_range">
+                  </a> <!-- select_filter_range -->
+                  <span class="method-name">select_filter_range</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/2m/6yv0qfv17k5cj99h3spgsjfr0000gn/T/testng-eclipse--1957504879/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/2m/6yv0qfv17k5cj99h3spgsjfr0000gn/T/testng-eclipse-1095509273/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -224,6 +236,10 @@
                 <span class="method-in-group-name">searchItem</span>
                 <br/>
               </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">select_filter_range</span>
+                <br/>
+              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -241,28 +257,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addItemToCart')
 data.setCell(0, 2, 'com.seleniumframework.Amazonshopping')
-data.setCell(0, 3, 6449);
+data.setCell(0, 3, 6310);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'navigateToAmazon')
+data.setCell(1, 1, 'select_filter_range')
 data.setCell(1, 2, 'com.seleniumframework.Amazonshopping')
-data.setCell(1, 3, 4282);
+data.setCell(1, 3, 5212);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'searchItem')
+data.setCell(2, 1, 'navigateToAmazon')
 data.setCell(2, 2, 'com.seleniumframework.Amazonshopping')
-data.setCell(2, 3, 547);
+data.setCell(2, 3, 4305);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'assert_item_added')
+data.setCell(3, 1, 'searchItem')
 data.setCell(3, 2, 'com.seleniumframework.Amazonshopping')
-data.setCell(3, 3, 64);
+data.setCell(3, 3, 909);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'assert_item_added')
+data.setCell(4, 2, 'com.seleniumframework.Amazonshopping')
+data.setCell(4, 3, 60);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -295,19 +315,23 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">navigateToAmazon</span>
-                <span class="method-start">3075 ms</span>
+                <span class="method-start">3251 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">searchItem</span>
-                <span class="method-start">7399 ms</span>
+                <span class="method-start">7616 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addItemToCart</span>
-                <span class="method-start">8000 ms</span>
+                <span class="method-start">8558 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">assert_item_added</span>
-                <span class="method-start">14483 ms</span>
+                <span class="method-start">14891 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">select_filter_range</span>
+                <span class="method-start">14956 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
