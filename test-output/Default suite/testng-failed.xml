@@ -6,6 +6,8 @@
       <class name="com.seleniumframework.Amazonshopping">
         <methods>
           <include name="select_filter_range"/>
+          <include name="select_CheckBox_PrimeReadingEligible"/>
+          <include name="handle_Popup"/>
         </methods>
       </class> <!-- com.seleniumframework.Amazonshopping -->
     </classes>

@@ -1,43 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-27T11:18:45 CDT" name="Default suite" finished-at="2024-08-27T11:19:05 CDT" duration-ms="20273">
+  <suite started-at="2024-08-28T17:26:52 CDT" name="Default suite" finished-at="2024-08-28T17:27:18 CDT" duration-ms="26236">
     <groups>
+      <group name="StartShopping">
+        <method signature="Amazonshopping.handle_Popup()[pri:6, instance:com.seleniumframework.Amazonshopping@82de64a]" name="handle_Popup" class="com.seleniumframework.Amazonshopping"/>
+        <method signature="Amazonshopping.select_CheckBox_PrimeReadingEligible()[pri:7, instance:com.seleniumframework.Amazonshopping@82de64a]" name="select_CheckBox_PrimeReadingEligible" class="com.seleniumframework.Amazonshopping"/>
+      </group> <!-- StartShopping -->
       <group name="Startshopping">
-        <method signature="Amazonshopping.navigateToAmazon()[pri:1, instance:com.seleniumframework.Amazonshopping@71a8adcf]" name="navigateToAmazon" class="com.seleniumframework.Amazonshopping"/>
-        <method signature="Amazonshopping.searchItem()[pri:2, instance:com.seleniumframework.Amazonshopping@71a8adcf]" name="searchItem" class="com.seleniumframework.Amazonshopping"/>
-        <method signature="Amazonshopping.addItemToCart()[pri:3, instance:com.seleniumframework.Amazonshopping@71a8adcf]" name="addItemToCart" class="com.seleniumframework.Amazonshopping"/>
-        <method signature="Amazonshopping.assert_item_added()[pri:4, instance:com.seleniumframework.Amazonshopping@71a8adcf]" name="assert_item_added" class="com.seleniumframework.Amazonshopping"/>
-        <method signature="Amazonshopping.select_filter_range()[pri:5, instance:com.seleniumframework.Amazonshopping@71a8adcf]" name="select_filter_range" class="com.seleniumframework.Amazonshopping"/>
+        <method signature="Amazonshopping.navigateToAmazon()[pri:1, instance:com.seleniumframework.Amazonshopping@82de64a]" name="navigateToAmazon" class="com.seleniumframework.Amazonshopping"/>
+        <method signature="Amazonshopping.searchItem()[pri:2, instance:com.seleniumframework.Amazonshopping@82de64a]" name="searchItem" class="com.seleniumframework.Amazonshopping"/>
+        <method signature="Amazonshopping.addItemToCart()[pri:3, instance:com.seleniumframework.Amazonshopping@82de64a]" name="addItemToCart" class="com.seleniumframework.Amazonshopping"/>
+        <method signature="Amazonshopping.assert_item_added()[pri:4, instance:com.seleniumframework.Amazonshopping@82de64a]" name="assert_item_added" class="com.seleniumframework.Amazonshopping"/>
+        <method signature="Amazonshopping.select_filter_range()[pri:5, instance:com.seleniumframework.Amazonshopping@82de64a]" name="select_filter_range" class="com.seleniumframework.Amazonshopping"/>
       </group> <!-- Startshopping -->
     </groups>
-    <test started-at="2024-08-27T11:18:45 CDT" name="Default test" finished-at="2024-08-27T11:19:05 CDT" duration-ms="20273">
+    <test started-at="2024-08-28T17:26:52 CDT" name="Default test" finished-at="2024-08-28T17:27:18 CDT" duration-ms="26236">
       <class name="com.seleniumframework.Amazonshopping">
-        <test-method is-config="true" signature="BaseTest()[pri:0, instance:com.seleniumframework.Amazonshopping@71a8adcf]" started-at="2024-08-27T11:18:45 CDT" name="BaseTest" finished-at="2024-08-27T11:18:48 CDT" duration-ms="3250" status="PASS">
+        <test-method is-config="true" signature="BaseTest()[pri:0, instance:com.seleniumframework.Amazonshopping@82de64a]" started-at="2024-08-28T17:26:52 CDT" name="BaseTest" finished-at="2024-08-28T17:26:55 CDT" duration-ms="3341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BaseTest -->
-        <test-method signature="navigateToAmazon()[pri:1, instance:com.seleniumframework.Amazonshopping@71a8adcf]" started-at="2024-08-27T11:18:48 CDT" name="navigateToAmazon" finished-at="2024-08-27T11:18:53 CDT" duration-ms="4305" status="PASS">
+        <test-method signature="navigateToAmazon()[pri:1, instance:com.seleniumframework.Amazonshopping@82de64a]" started-at="2024-08-28T17:26:55 CDT" name="navigateToAmazon" finished-at="2024-08-28T17:27:01 CDT" duration-ms="5664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToAmazon -->
-        <test-method signature="searchItem()[pri:2, instance:com.seleniumframework.Amazonshopping@71a8adcf]" started-at="2024-08-27T11:18:53 CDT" name="searchItem" finished-at="2024-08-27T11:18:53 CDT" duration-ms="909" status="PASS">
+        <test-method signature="searchItem()[pri:2, instance:com.seleniumframework.Amazonshopping@82de64a]" started-at="2024-08-28T17:27:01 CDT" name="searchItem" finished-at="2024-08-28T17:27:02 CDT" duration-ms="898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItem -->
-        <test-method signature="addItemToCart()[pri:3, instance:com.seleniumframework.Amazonshopping@71a8adcf]" started-at="2024-08-27T11:18:54 CDT" name="addItemToCart" finished-at="2024-08-27T11:19:00 CDT" duration-ms="6310" status="PASS">
+        <test-method signature="addItemToCart()[pri:3, instance:com.seleniumframework.Amazonshopping@82de64a]" started-at="2024-08-28T17:27:02 CDT" name="addItemToCart" finished-at="2024-08-28T17:27:09 CDT" duration-ms="6906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemToCart -->
-        <test-method signature="assert_item_added()[pri:4, instance:com.seleniumframework.Amazonshopping@71a8adcf]" started-at="2024-08-27T11:19:00 CDT" name="assert_item_added" finished-at="2024-08-27T11:19:00 CDT" duration-ms="60" status="PASS">
+        <test-method signature="assert_item_added()[pri:4, instance:com.seleniumframework.Amazonshopping@82de64a]" started-at="2024-08-28T17:27:09 CDT" name="assert_item_added" finished-at="2024-08-28T17:27:09 CDT" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assert_item_added -->
-        <test-method signature="select_filter_range()[pri:5, instance:com.seleniumframework.Amazonshopping@71a8adcf]" started-at="2024-08-27T11:19:00 CDT" name="select_filter_range" finished-at="2024-08-27T11:19:05 CDT" duration-ms="5212" status="PASS">
+        <test-method signature="select_filter_range()[pri:5, instance:com.seleniumframework.Amazonshopping@82de64a]" started-at="2024-08-28T17:27:09 CDT" name="select_filter_range" finished-at="2024-08-28T17:27:14 CDT" duration-ms="5645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_filter_range -->
+        <test-method signature="handle_Popup()[pri:6, instance:com.seleniumframework.Amazonshopping@82de64a]" started-at="2024-08-28T17:27:14 CDT" name="handle_Popup" finished-at="2024-08-28T17:27:17 CDT" duration-ms="2211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handle_Popup -->
+        <test-method signature="select_CheckBox_PrimeReadingEligible()[pri:7, instance:com.seleniumframework.Amazonshopping@82de64a]" started-at="2024-08-28T17:27:17 CDT" name="select_CheckBox_PrimeReadingEligible" finished-at="2024-08-28T17:27:18 CDT" duration-ms="1231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- select_CheckBox_PrimeReadingEligible -->
       </class> <!-- com.seleniumframework.Amazonshopping -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

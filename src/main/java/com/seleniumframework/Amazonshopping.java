@@ -50,7 +50,7 @@ public class Amazonshopping extends BaseTest {
 
 	}
 
-	//Select perticular item from the list of displayed items, select specifications and then add it to the cart
+	//Select particular item from the list of displayed items, select specifications and then add it to the cart
 	@Test(groups = { "Startshopping" }, priority = 3)
 	public void addItemToCart() throws InterruptedException {
 		System.out.println("::::addItemToCart");
@@ -107,4 +107,26 @@ public class Amazonshopping extends BaseTest {
 
 	}
 
+	//Explicit wait to handle pop-up 
+	@Test(groups= {"StartShopping"}, priority=6)
+    public void handle_Popup()
+    {
+    	driver.get("https://www.veeqo.com/?utm_source=amazon&utm_medium=website&utm_campaign=footer");  
+    	WebElement wait= new WebDriverWait(driver,Duration.ofSeconds(2))
+    			.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"headlessui-dialog-panel-:r1:\"]")));
+    	 driver.findElement(By.xpath("//*[@id=\"headlessui-dialog-panel-:r1:\"]/div[2]/button[1]")).click();
+    }
+	
+	
+	//Test check-box
+	@Test(groups={"StartShopping"},priority=7)
+    public void select_CheckBox_PrimeReadingEligible()
+    {
+    	driver.get("https://www.amazon.com/gp/browse.html?node=283155&ref_=nav_em__bo_t3_0_2_16_2&ccs_id=62e23c44-cc3f-4ac4-a3b5-adae5cb2b9c2");
+		driver.findElement(By.xpath("//*[@id=\"s-refinements\"]/div[1]/ul/li/span/a/div/label")).click();
+    }
+	
+	
 }
+
+

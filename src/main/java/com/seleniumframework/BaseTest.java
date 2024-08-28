@@ -20,10 +20,10 @@ public class BaseTest {
 		//driver.get("https://www.amazon.com");
 		
 	}
-	
+
 	public void teardown()
 	{
-	driver.close();
+	//driver.close();
 	driver.quit();
 	}
 
